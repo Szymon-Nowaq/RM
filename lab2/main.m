@@ -34,3 +34,27 @@ disp("Wynik");
 disp(X);
 disp("Macierz po przekształceniach");
 disp(A_p);
+
+[X, time, L, U] = lu_no_pivot(A, B);
+disp("LU faktoryzacja bez pivotingu")
+disp("Czas:");
+disp(time);
+disp("Wynik");
+disp(X);
+disp("Macierz L");
+disp(L);
+disp("Macierz U");
+disp(U);
+
+[X, time, L, U, P] = lu_pivot(A, B);
+disp("LU faktoryzacja z pivotingiem")
+disp("Czas:");
+disp(time);
+disp("Wynik");
+disp(X);
+disp("Macierz L");
+disp(L);
+disp("Macierz U");
+disp(U);
+disp("Macierz P");
+disp(P);
